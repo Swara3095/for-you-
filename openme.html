@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background, Centered Image, and Button</title>
+    <style>
+        /* Apply styles for the background and center image */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: center;
+            align-items: center;
+            background: url('./wallpaper.jpg') no-repeat center center/cover; /* Replace 'background.jpg' */
+            font-family: Arial, sans-serif;
+        }
+
+        .center-image {
+            width: 300px; /* Adjust width as needed */
+            height: auto;
+            border-radius: 10px; /* Optional rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow for better visibility */
+        }
+
+        .center-image:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .button {
+            margin-top: 20px; /* Space between the image and the button */
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF; /* Button color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            transform: scale(1.1); /* Slightly enlarges the button */
+        }
+
+        .button:active {
+            background-color: #004085; /* Even darker shade when clicked */
+            transform: scale(1); /* Resets scale */
+        }
+    </style>
+</head>
+<body>
+    <!-- Center image container -->
+    <img src="./hug.jpg" alt="Center Image" class="center-image">
+
+    <!-- Button below the image -->
+    
+    <a href="./info.html" class="button">press me</a>
+
+</body>
+</html>
